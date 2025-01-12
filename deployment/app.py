@@ -24,5 +24,22 @@ def classify_film_genre(description):
   return dict(zip(genres, map(float, probs))) 
 
 label = gr.Label(num_top_classes=5)
-iface = gr.Interface(fn=classify_film_genre, inputs="text", outputs=label)
+iface = gr.Interface(fn=classify_film_genre, 
+                     inputs="text", 
+                     outputs=label,
+                     title="Film Genre Classifer",
+                     description=(
+        f"""
+        
+        Instructions:
+        
+        1. Copy and paste a movie plot from the internet.
+        2. Hit the Submit button.
+        
+        Note: There are a total of 27 Genres to classify
+
+        
+        """
+    )
+                    )
 iface.launch(inline=False)
