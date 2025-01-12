@@ -34,4 +34,5 @@ def predict_genres(input_text):
     return result
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # disable debuh in production
+    app.run(debug=False)
