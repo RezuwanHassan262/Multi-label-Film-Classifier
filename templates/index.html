@@ -38,7 +38,7 @@
                 placeholder="Paste Movie Description here"
                 name="input_text"
                 style="height: 200px; background-color: rgb(228, 226, 224)"
-              ></textarea>
+              >{{ input_text }}</textarea>
             </div>
             <br />
             <div class="d-flex justify-content-between">
@@ -53,17 +53,18 @@
             </div>
           </form>
 
-          
+
+          {% if output_text %}
 
           <div class="mb-3 mt-3" id="responseCard">
             <div class="card" style="background-color: #edebe2">
               <div class="card-header text-black">
                 <h5 class="card-title text-center">Genres</h5>
-                <p class="card-text" id="outputText"></p>
+                <p class="card-text" id="outputText">{{ output_text }}</p>
               </div>
             </div>
           </div>
-          
+          {% endif %}
         </div>
       </div>
     </div>
