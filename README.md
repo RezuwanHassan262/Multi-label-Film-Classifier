@@ -1,6 +1,15 @@
 # Multi-label Film Classifier
 
-A film classifier that is able to classify 27 film (Both Movie and Series) genres based on the provided description. 
+</br>
+
+<h1 align='center' style=color:#fe5e21;><strong>From Paper With Tasks</strong></h1>
+
+This classifier model is able to classify 27 film (Both Movie and Series) genres based on the provided description. <br/>
+<br/>
+
+ <h2 style=color:#fe5e21;>Data Collection</h2>
+
+The data was scraped from the ["Rotten Tomato"](https://www.rottentomatoes.com/) website and is available [here.](https://github.com/RezuwanHassan262/Universal-Language-Model-Fine-tuning-for-Text-Classification-Implementation/blob/main/data/film_details.csv). The keys of `genre_types_encoded_multi_class.json` shows the film genre.
 
 
 |             Genre             |             Genre          |            Genre           |       
@@ -14,3 +23,8 @@ A film classifier that is able to classify 27 film (Both Movie and Series) genre
 | 7. Mystery                    | 16. Fantasy                | 25. Talk-Show              |
 | 8. History                    | 17. Western                | 26. Reality-TV             |
 | 9. Romance                    | 18. Music                  | 27. Unknown                |
+
+The scripts I've used to scrape the data can be found in the [`scrapers`](https://github.com/RezuwanHassan262/Multi-label-Film-Classifier/tree/main/scripts) directory. 
+
+In total, I scraped **15k+** movie descriptions, genres and other relevant information about them.
+
