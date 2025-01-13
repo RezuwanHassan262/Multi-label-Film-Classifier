@@ -43,11 +43,14 @@ The initial trained model had a substantial memory footprint of approximately 31
 
 <h3 style=color:#fe5e21;>HuggingFace Spaces</h3>
 
-The compressed model is deployed to the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or here
+The compressed model is deployed to the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or [here](https://huggingface.co/spaces/Rezuwan/film_genre_classifier)
 
+![HF spaces screenshot](https://raw.githubusercontent.com/RezuwanHassan262/Multi-label-Film-Classifier/main/images/fgc.PNG)
 
-<h3 style=color:#fe5e21;>Web Deployment</h3>
+<h3 style=color:#fe5e21;>Web (Flask) Deployment</h3>
 
-Deployed a Flask App built to take abstract and show the tasks of the paper as output. Check flask branch. The website is live here
+Deployed a Flask App built to take the description and classify the genres of the film from the description. Check `deployment` branch. The website is live [here](somewhereonthenet).
 
-*Background Image Credit: The image used as the background is not mine. It was taken from here
+![web deployed screenshot](https://raw.githubusercontent.com/RezuwanHassan262/Multi-label-Film-Classifier/main/images/fgcw.PNG)
+
+Note: The image used as the background was hyperlinked from [here](Wallpapers.com/)
