@@ -1,8 +1,4 @@
-# Multi-label Film Classifier
-
-</br>
-
-<h1 align='center' style=color:#fe5e21;><strong>From Paper With Tasks</strong></h1>
+<h1 align='center' style=color:#fe5e21;><strong>Multi-label Film Classifier</strong></h1>
 
 This classifier model is able to classify 27 film (Both Movie and Series) genres based on the provided description. <br/>
 <br/>
