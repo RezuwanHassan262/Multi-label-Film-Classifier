@@ -53,4 +53,4 @@ Deployed a Flask web app that classifies movie genres based on their description
 
 ![web deployed screenshot](https://raw.githubusercontent.com/RezuwanHassan262/Multi-label-Film-Classifier/main/images/fgcw.PNG)
 
-Note: The image used as the background was hyperlinked from [here](Wallpapers.com/)
+Note: The image used as the background was hyperlinked from [Wallpapers.com](https://wallpaper.dog/movies)
