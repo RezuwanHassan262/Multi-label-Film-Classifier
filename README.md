@@ -22,7 +22,7 @@ The data was scraped from the ["Rotten Tomato"](https://www.rottentomatoes.com/)
 
 The scripts I've used to scrape the data can be found in the [`scrapers`](https://github.com/RezuwanHassan262/Multi-label-Film-Classifier/tree/main/scripts) directory. 
 
-In total, I scraped **15k+** movie descriptions, genres and other relevant information about them.
+In total, I scraped **15k+** movie descriptions, genres, and other relevant information about them.
 
 <h2 style=color:#fe5e21;>Data Processing</h2>
 
@@ -37,3 +37,17 @@ I leveraged a pre-trained transformer model called `distilrobera-base` from Hugg
 <h2 style=color:#fe5e21;>ONNX Transformation</h2>
 
 The initial trained model had a substantial memory footprint of approximately 314MB. To optimize its size and potentially improve inference speed, I employed ONNX quantization. This technique successfully reduced the model size to a more manageable 78MB.
+
+
+<h2 style=color:#fe5e21;>Deployment</h2>
+
+<h3 style=color:#fe5e21;>HuggingFace Spaces</h3>
+
+The compressed model is deployed to the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or here
+
+
+<h3 style=color:#fe5e21;>Web Deployment</h3>
+
+Deployed a Flask App built to take abstract and show the tasks of the paper as output. Check flask branch. The website is live here
+
+*Background Image Credit: The image used as the background is not mine. It was taken from here
