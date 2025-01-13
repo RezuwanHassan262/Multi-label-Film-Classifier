@@ -24,3 +24,16 @@ The scripts I've used to scrape the data can be found in the [`scrapers`](https:
 
 In total, I scraped **15k+** movie descriptions, genres and other relevant information about them.
 
+<h2 style=color:#fe5e21;>Data Processing</h2>
+
+The initial dataset contained 2186 distinct genre combinations. To streamline the analysis, I removed rare combinations occurring less than 151 times (approximately 1% of the dataset), resulting in 1807 combinations being excluded. Subsequently, null entries and duplicate rows were removed, yielding a final dataset of 15,149 samples. This cleaned and refined dataset, named film_infos.csv, is available within the data directory. The version used for model fine-tuning, film_genre_data.csv, was further processed from this dataset.
+
+<h2 style=color:#fe5e21;>Modeling</h2>
+
+I leveraged a pre-trained transformer model called `distilrobera-base` from HuggingFace Transformers to fine-tune it for multi-label movie genre classification. This process involved using the Fastai and Blurr libraries. The notebook containing the training code can be found [here](https://github.com/RezuwanHassan262/Multi-label-Film-Classifier/tree/main/notebooks). Feel free to explore other notebooks in the same directory for further details.
+
+
+
+<h2 style=color:#fe5e21;>ONNX Transformation</h2>
+
+The initial trained model had a substantial memory footprint of approximately 314MB. To optimize its size and potentially improve inference speed, I employed ONNX quantization. This technique successfully reduced the model size to a more manageable 78MB.
